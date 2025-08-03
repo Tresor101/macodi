@@ -1,0 +1,69 @@
+/* styles.css */
+
+/* Make body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Sticky footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529; /* Bootstrap dark */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+/* Push content above footer */
+main {
+  padding-bottom: 80px; /* Reserve space for the fixed footer */
+  position: relative;
+  z-index: 1;
+
+}
+
+/* Optional: Adjust for mobile */
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-color: #212529; 
+  /* or use a background image 
+  background: url('images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  */
+}
+body.policy-background {
+  background: url('images/flags.jpg');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: repeat;
+  background-attachment: fixed; 
+}
+
+body.policy-background::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
+}
+
+body.policy-background,
+body.policy-background p,
+body.policy-background h1,
+body.policy-background h2,
+body.policy-background h3 {
+  color: #fff;}

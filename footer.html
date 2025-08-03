@@ -1,0 +1,16 @@
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-1">© <span id="current-year"></span> Congolese Community in Malaysia. All rights reserved.</p>
+    <p class="mb-0">
+      <a href="terms.html" class="text-white text-decoration-underline">Terms of Service</a> |
+      <a href="privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Set current year in footer
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  });
+</script>
