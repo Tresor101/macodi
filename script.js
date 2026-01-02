@@ -1,4 +1,5 @@
 // Navbar toggle for mobile
+console.log('Script loaded successfully');
 
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
