@@ -1,3 +1,9 @@
+/* CSS Loaded Indicator - For verification in browser console */
+body::after {
+    content: 'css-loaded';
+    display: none;
+}
+
 .nav-toggle.open .bar1 {
     transform: translateY(8px) rotate(45deg);
     background: var(--accent, #ffe082);
