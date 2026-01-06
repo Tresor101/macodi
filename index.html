@@ -1,267 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Treasure Ltd</title>
-    <meta name="description" content="Vintage Treasure Ltd is a procurement specialist with global supply, sourcing, and logistical services for mining, engineering, oil & gas, civil infrastructure, and construction industries.">
-    <meta name="keywords" content="Procurement, Supply Chain, Logistics, Mining, Engineering, Oil & Gas, Construction, Sourcing, South Africa, Vintage Treasure">
-    <meta name="author" content="Vintage Treasure Ltd">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vintage Treasure Ltd">
-    <meta property="og:description" content="Procurement, supply chain, and logistics experts for the mining, engineering, oil & gas, and construction industries.">
-    <meta property="og:url" content="https://vtreasure.com/">
-    <meta property="og:image" content="https://vtreasure.com/og-image.jpg">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vintage Treasure Ltd">
-    <meta name="twitter:description" content="Procurement, supply chain, and logistics experts for the mining, engineering, oil & gas, and construction industries.">
-    <meta name="twitter:image" content="https://vtreasure.com/og-image.jpg">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Treasure</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="alt-header">
-        <nav class="alt-navbar" role="navigation" aria-label="Main Navigation">
-            <div class="alt-logo">Vintage Treasure</div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-            </button>
-            <ul class="alt-nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Responsive Navbar Script -->
-    <script src="script.js"></script>
-    <main>
-        <section id="home" class="alt-hero" aria-label="Home">
-            <div class="alt-hero-content">
-                <h1>Vintage Treasure Ltd</h1>
-                <p class="alt-hero-tag">Procurement & Global Supply Experts</p>
-                <p class="alt-hero-desc">Supplying the mining, engineering, oil & gas, civil infrastructure, and construction industries worldwide.</p>
-                <a href="#contact" class="alt-hero-btn">Get in Touch</a>
-            </div>
-        </section>
-        <section id="about" class="alt-section alt-about" aria-label="About Us">
-            <div class="alt-section-content">
-                <h2>About Us</h2>
-                <div class="alt-about-flex">
-                    <div>
-                        <p>Vintage Treasure’s team draws from extensive sourcing capabilities and a vast supplier base, offering industry knowledge and technical advice from in-house experts. We accommodate extensive project requirements globally.</p>
-                        <h3>Vision</h3>
-                        <p>To be one of the top Procurement Houses by maintaining low overheads and a tightly-knit team.</p>
-                    </div>
-                    <div>
-                        <h3>Core Values</h3>
-                        <ul>
-                            <li>Respect and faith for customers</li>
-                            <li>Creativity, innovation, and integrity</li>
-                            <li>Business ethics in all aspects</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="products" class="alt-section alt-products" aria-label="Products">
-  <div class="alt-section-content">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <!-- Sulphuric Acid -->
-      <div class="product-card">
-        <div class="product-icon">🧪</div>
-        <h3>Sulphuric Acid (H<sub>2</sub>SO<sub>4</sub>)</h3>
-        <div class="product-badges">
-          <span class="badge">≥98% purity</span>
-          <span class="badge">Clear, colorless</span>
-          <span class="badge">100% water soluble</span>
-        </div>
-        <button class="details-toggle" data-details="0">View Details</button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient shadow sticky-top" style="background: linear-gradient(90deg, #232526 0%, #414345 100%);">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#" style="font-size:1.5rem;">
+        <img src="logo.jpg" alt="Logo" style="height:36px;width:36px;margin-right:10px;"> Vintage Treasure
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link nav-underline active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline" href="#company-overview">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline" href="#services">Our Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline" href="#products">Our Products</a></li>
+          <li class="nav-item"><a class="nav-link nav-underline" href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <!-- Quick Lime -->
-      <div class="product-card">
-        <div class="product-icon">🪨</div>
-        <h3>Quick Lime (CaO)</h3>
-        <div class="product-badges">
-          <span class="badge">Lumps & Powder</span>
-          <span class="badge">Milky white, ≥90% CaO</span>
-        </div>
-        <button class="details-toggle" data-details="1">View Details</button>
-      </div>
-      <!-- Base Oils -->
-      <div class="product-card">
-        <div class="product-icon">🛢️</div>
-        <h3>Base Oils</h3>
-        <button class="details-toggle" data-details="3">View Details</button>
-      </div>
-      <!-- Limestone -->
-      <div class="product-card">
-        <div class="product-icon">⛰️</div>
-        <h3>Limestone</h3>
-        <div class="product-badges">
-          <span class="badge">Natural mineral</span>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <img src="logo.svg" alt="Vintage Treasure Logo" class="hero-logo-bg">
+    <div>
+      <h1 class="display-4 fw-bold">Vintage Treasure</h1>
+      <p class="lead">Supplying Mining, Engineering, Oil & Gas, Civil Infrastructure, and Construction Industries Worldwide</p>
+      <span style="font-size:1.2rem; color:#ccc;">Do It Better</span>
+      <br>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Company Overview Section -->
+  <section id="company-overview" class="container py-5">
+    <div class="bg-dark text-white p-5 rounded mb-5" style="box-shadow: 0 0 20px rgba(0,0,0,0.2);">
+      <h2 class="mb-4">About Us</h2>
+      <p>
+        Vintage Treasure’s team draws from extensive sourcing capabilities and a vast supplier base, offering industry knowledge and technical advice from in-house experts. We accommodate extensive project requirements globally.
+      </p>
+      <hr class="my-4" style="border-color: #444;">
+      <h3 class="mb-3">Vision</h3>
+      <p>
+        To be one of the top Procurement Houses by maintaining low overheads and a tightly-knit team.
+      </p>
+      <hr class="my-4" style="border-color: #444;">
+      <h3 class="mb-3">Core Values</h3>
+      <ul class="list-unstyled ms-3">
+        <li>• Respect and faith for customers</li>
+        <li>• Creativity, innovation, and integrity</li>
+        <li>• Business ethics in all aspects</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container py-5">
+    <h2 class="mb-4 text-center">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://uploads-ssl.webflow.com/6010f1ebe9025ec3840c2af7/60dc13f24bb3d00853e73308_quality%20assurance.jpeg" class="card-img-top" alt="Quality Assurance & Quality Control">
+          <div class="card-body">
+            <h5 class="card-title">Quality Assurance & Quality Control</h5>
+            <p class="card-text">Ensuring the highest standards in every project through rigorous QA/QC processes and inspections.</p>
+          </div>
         </div>
       </div>
-      <!-- Sub-Grades of Sulphur -->
-      <div class="product-card">
-        <div class="product-icon">🟡</div>
-        <h3>Sub-Grades of Sulphur</h3>
-        <div class="product-badges">
-          <span class="badge">Granular, Blocks, Lumps, Rolls, Flakes, Powder</span>
-        </div>
-        <button class="details-toggle" data-details="2">View Details</button>
-      </div>
-      <!-- Hydrated Lime Powder -->
-      <div class="product-card">
-        <div class="product-icon">🧂</div>
-        <h3>Hydrated Lime Powder</h3>
-        <div class="product-badges">
-          <span class="badge">High purity</span>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/premium-vector/product-development-concept-line-icon-geometric-design-modern-colored-icons_855620-96.jpg" class="card-img-top" alt="Project Management">
+          <div class="card-body">
+            <h5 class="card-title">Project Management</h5>
+            <p class="card-text">Comprehensive project management solutions from planning to execution, tailored to your needs.</p>
+          </div>
         </div>
       </div>
-      <!-- Other Products -->
-      <div class="product-card wide">
-        <div class="product-icon">📦</div>
-        <h3>Other Products</h3>
-        <div class="product-badges">
-          <span class="badge">Coke, Coal, Petroleum, Base Oils, Steel</span>
-          <span class="badge">HDPE, Mineral Equipment</span>
-          <span class="badge">Solar, PPE, Prefab Housing, Plastics</span>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Logistics and Supply Chain Management">
+          <div class="card-body">
+            <h5 class="card-title">Logistics & Supply Chain Management</h5>
+            <p class="card-text">Efficient logistics and supply chain management to ensure timely delivery and cost-effective solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Products Development">
+          <div class="card-body">
+            <h5 class="card-title">Products Development</h5>
+            <p class="card-text">Innovative product development services to bring your ideas to life and meet market demands.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-        <section id="services" class="alt-section alt-services" aria-label="Services">
-            <div class="alt-section-content">
-                <h2>Our Services</h2>
-                <div class="alt-service-list">
-                    <div class="alt-service-item">Quality Assurance & Control</div>
-                    <div class="alt-service-item">Project Management</div>
-                    <div class="alt-service-item">Logistics & Supply Chain</div>
-                    <div class="alt-service-item">Product Development</div>
-                </div>
-                <p class="alt-service-desc">We help clients reduce procurement costs and streamline supply chains, staying connected with vendors for optimal negotiation and value.</p>
-            </div>
-        </section>
-        <section id="contact" class="alt-section alt-contact" aria-label="Contact Us">
-            <div class="alt-section-content contact-card-redesign">
-                <h2>Contact Us</h2>
-                <div class="contact-cards-flex">
-                    <div class="contact-card-item contact-card-business">
-                        <div class="contact-icon">🏢</div>
-                        <div>
-                            <div class="contact-label">Business Name</div>
-                            <div class="contact-value">Vintage Treasure Ltd</div>
-                        </div>
-                    </div>
-                    <div class="contact-card-item contact-card-address">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <div class="contact-label">Address</div>
-                            <div class="contact-value">400 Visagie Street, Pretoria, South Africa</div>
-                        </div>
-                    </div>
-                    <div class="contact-card-item contact-card-phone">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <div class="contact-label">Phone</div>
-                            <div class="contact-value">
-                                <a href="tel:+27793112752"><strong>+27 (0) 79 311 2752</strong></a><br>
-                                <a href="tel:+243825837614">+243 (0) 82 583 7614</a><br>
-                                <a href="tel:+260774409456">+260 77 440 9456</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-card-item contact-card-email">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">
-                                <a href="mailto:paulkabambi@vtreasure.com"><strong>paulkabambi@vtreasure.com</strong></a><br>
-                                <a href="mailto:paulrichardkk@gmail.com">paulrichardkk@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-card-item contact-card-business">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <div class="contact-label">Core Business</div>
-                            <div class="contact-value">Procurement, Supply Chain Management, Logistical Services</div>
-                        </div>
-                    </div>
-                </div>
-                <!--<form class="contact-form" action="#" method="post" autocomplete="on">
-                    <h3 style="margin-top:2rem;">Send Us a Message</h3>
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Your Email">
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="alt-hero-btn">Send Message</button>
-                    <div class="form-status" aria-live="polite" style="margin-top:1rem;"></div>
-                </form>-->
-                <div class="contact-map" style="margin-top:2rem;">
-                    <iframe src="https://www.google.com/maps?q=400+Visagie+Street,+Pretoria,+South+Africa&output=embed" width="100%" height="220" style="border:0;border-radius:12px;box-shadow:0 2px 8px #4fc3f722;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office Location"></iframe>
-                </div>
-                <div class="quick-actions" style="margin-top:2rem;display:flex;gap:1.2rem;justify-content:center;">
-                    <a href="https://wa.me/27793112752" class="alt-hero-btn" style="background:#25d366;color:#fff;">WhatsApp</a>
-                    <a href="mailto:paulkabambi@vtreasure.com" class="alt-hero-btn">Email</a>
-                    <a href="tel:+27793112752" class="alt-hero-btn" style="background:#ffe082;color:#1a2233;">Call</a>
-                </div>
-            </div>
-        </section>
-        <section id="director" class="alt-section alt-director" aria-label="Managing Director Message">
-            <div class="alt-section-content">
-                <h2>Message from the Managing Director</h2>
-                <blockquote>
-                    In an industry where responsiveness, quality, and consistency are key, Vintage Treasure is driven by a mission to deliver above and beyond industry values and customer expectations.<br>
-                    <strong>Paul Richard Kabambi</strong><br>
-                    Managing Director
-                </blockquote>
-            </div>
-        </section>
-    </main>
-    <footer class="alt-footer" aria-label="Footer">
-        <p>&copy; <span id="current-year"></span> Vintage Treasure Ltd. All rights reserved.</p>
-    </footer>
+  </section>
 
-    <!-- Floating Contact Buttons -->
-    <div class="floating-contact">
-        <a href="https://wa.me/27793112752" class="float-btn whatsapp" title="WhatsApp" target="_blank" rel="noopener">&#128241;</a>
-        <a href="mailto:paulkabambi@vtreasure.com" class="float-btn email" title="Email">&#9993;</a>
-        <a href="tel:+27793112752" class="float-btn phone" title="Call">&#128222;</a>
+  <!-- Our Products Section -->
+  <section id="products" class="container py-5">
+    <h2 class="mb-4 text-center">Our Products</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://tiimg.tistatic.com/fp/2/008/869/sulphuric-acid--089.jpg" class="card-img-top" alt="Sulphuric Acid (H2SO4)">
+          <div class="card-body">
+            <h5 class="card-title">Sulphuric Acid (H<sub>2</sub>SO<sub>4</sub>)</h5>
+            <p class="card-text">High-purity sulphuric acid for industrial and mining applications.</p>
+            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSulphuricAcid">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/premium-photo/calcium-oxide-also-called-quicklime-quicklime-industrial-product-used-construction_641503-190230.jpg" class="card-img-top" alt="Quick Lime (CaO)">
+          <div class="card-body">
+            <h5 class="card-title">Quick Lime (CaO)</h5>
+            <p class="card-text">Premium quick lime for construction, water treatment, and chemical processes.</p>
+            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalQuickLime">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://sktradexim.com/wp-content/uploads/2023/05/BaseOil-2.jpg" class="card-img-top" alt="Base Oils">
+          <div class="card-body">
+            <h5 class="card-title">Base Oils</h5>
+            <p class="card-text">High-quality base oils for lubricants and industrial applications.</p>
+            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalBaseOils">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/premium-photo/sulfur-brimstone-sulphur-vein-stone-isolated_696657-38653.jpg" class="card-img-top" alt="Sub-Grades of Sulphur">
+          <div class="card-body">
+            <h5 class="card-title">Sub-Grades of Sulphur</h5>
+            <p class="card-text">Various grades of sulphur to meet diverse industrial requirements.</p>
+            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSulphur">View Details</button>
+            <!-- Modals for Product Details -->
+            <!-- Sulphuric Acid Modal -->
+            <div class="modal fade" id="modalSulphuricAcid" tabindex="-1" aria-labelledby="modalSulphuricAcidLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalSulphuricAcidLabel">Sulphuric Acid (H<sub>2</sub>SO<sub>4</sub>) - Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Physical Characteristics:</h6>
+                    <table class="table table-bordered mb-4">
+                      <tr><th>Property</th><th>Value</th></tr>
+                      <tr><td>Appearance</td><td>Clear, colorless liquid</td></tr>
+                      <tr><td>Purity</td><td>&ge; 98.0%</td></tr>
+                      <tr><td>Specific Gravity</td><td>1.834 (g/cm³)</td></tr>
+                      <tr><td>Molecular Weight</td><td>98.078 (g/mol)</td></tr>
+                    </table>
+                    <h6>Chemical Properties:</h6>
+                    <table class="table table-bordered mb-4">
+                      <tr><th>Property</th><th>Value</th></tr>
+                      <tr><td>Melting Point</td><td>10.31°C</td></tr>
+                      <tr><td>Boiling Point</td><td>337°C</td></tr>
+                      <tr><td>Solubility in Water</td><td>100%</td></tr>
+                      <tr><td>Solubility</td><td>Miscible, Exothermic</td></tr>
+                    </table>
+                    <h6>Chemical Analysis:</h6>
+                    <table class="table table-bordered">
+                      <tr><th>Test</th><th>Result</th><th>Limit</th></tr>
+                      <tr><td>Assay (%)</td><td>98.4</td><td>Min 97.5</td></tr>
+                      <tr><td>Fe (ppm)</td><td>12</td><td>Max 30</td></tr>
+                      <tr><td>Cu (ppm)</td><td>&lt;0.6</td><td>Max 10</td></tr>
+                      <tr><td>Cl (ppm)</td><td>&lt;0.002</td><td>Max 0.1</td></tr>
+                      <tr><td>Density (g/ml)</td><td>1.83</td><td>-</td></tr>
+                      <tr><td>Mn (ppm)</td><td>0.2</td><td>Max 0.3</td></tr>
+                      <tr><td>As (ppm)</td><td>0.08</td><td>Max 3</td></tr>
+                      <tr><td>SO<sub>3</sub> (ppm)</td><td>0.24</td><td>Max 17</td></tr>
+                      <tr><td>Volatile Material (%)</td><td>&lt;0.01</td><td>Max 0.05</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Lime Modal -->
+            <div class="modal fade" id="modalQuickLime" tabindex="-1" aria-labelledby="modalQuickLimeLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalQuickLimeLabel">Quick Lime (CaO) - Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Chemical Analysis:</h6>
+                    <table class="table table-bordered mb-4">
+                      <tr><th>Item</th><th>Result</th></tr>
+                      <tr><td>CaO</td><td>&ge;90%</td></tr>
+                      <tr><td>MgO</td><td>&lt;3.0%</td></tr>
+                      <tr><td>Fe<sub>2</sub>O<sub>3</sub></td><td>&le;0.05%</td></tr>
+                      <tr><td>Al<sub>2</sub>O<sub>3</sub></td><td>&le;0.2%</td></tr>
+                      <tr><td>SiO<sub>2</sub></td><td>&lt;0.68%</td></tr>
+                      <tr><td>S</td><td>&lt;0.05%</td></tr>
+                      <tr><td>C</td><td>&le;1.5%</td></tr>
+                      <tr><td>L.O.I</td><td>&le;6.0%</td></tr>
+                      <tr><td>Size</td><td>10 – 80 MM</td></tr>
+                      <tr><td>Color</td><td>Milky White</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Base Oils Modal -->
+            <div class="modal fade" id="modalBaseOils" tabindex="-1" aria-labelledby="modalBaseOilsLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalBaseOilsLabel">Base Oils - Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-bordered mb-4">
+                      <tr><th>Type</th></tr>
+                      <tr><td>Group I Base Oil</td></tr>
+                      <tr><td>Group II Base Oil</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sub-Grades of Sulphur Modal -->
+            <div class="modal fade" id="modalSulphur" tabindex="-1" aria-labelledby="modalSulphurLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalSulphurLabel">Sub-Grades of Sulphur - Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="table table-bordered mb-4">
+                      <tr><th>Sub-Grade</th></tr>
+                      <tr><td>Granular Sulphur (Pastilles, Globular)</td></tr>
+                      <tr><td>Sulphur Blocks</td></tr>
+                      <tr><td>Lumps Sulphur</td></tr>
+                      <tr><td>Sulphur Rolls</td></tr>
+                      <tr><td>Flakes Sulphur</td></tr>
+                      <tr><td>Powder Sulphur 125 Mesh – 400 Mesh</td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://img.freepik.com/premium-photo/limestone-stone-white-background-generative-ai_918839-2906.jpg" class="card-img-top" alt="Limestone">
+          <div class="card-body">
+            <h5 class="card-title">Limestone</h5>
+            <p class="card-text">Quality limestone for construction, steel, and environmental industries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://th.bing.com/th/id/OIP.45GSiEaSODsj53Q8wyq7qAHaHa?w=162&h=180&c=7&r=0&o=7&dpr=1.8&pid=1.7&rm=3" class="card-img-top" alt="Hydrated Lime Powder">
+          <div class="card-body">
+            <h5 class="card-title">Hydrated Lime Powder</h5>
+            <p class="card-text">Finely processed hydrated lime powder for industrial and environmental uses.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="https://th.bing.com/th/id/OIP.EM6g9WlCHQ8wCBTOAdRj4wHaHa?w=147&h=180&c=7&r=0&o=7&dpr=1.8&pid=1.7&rm=3" class="card-img-top" alt="Other Products">
+          <div class="card-body">
+            <h5 class="card-title">Other Products</h5>
+            <p class="card-text">We also supply a wide range of chemicals and minerals tailored to your project needs.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="mb-4 text-center">Contact Us</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="bg-dark text-white rounded p-4 h-100 d-flex flex-column justify-content-center shadow">
+          <h2 class="mb-4">Get in Touch</h2>
+          <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Pretoria, south africa</p>
+          <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>info@vintagetreasure.com</p>
+          <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>+243 (0) 82 583 7614</p>
+          <p class="mb-0"><i class="bi bi-clock-fill me-2"></i>Mon - Fri: 9:00am - 6:00pm</p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="card shadow-lg border-0">
+          <div class="card-body p-5">
+            <h3 class="mb-4 text-center">Contact Us</h3>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+            <div id="formAlert" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <script>
-            // Set current year in footer
-            document.addEventListener('DOMContentLoaded', function() {
-                var yearSpan = document.getElementById('current-year');
-                if (yearSpan) {
-                    yearSpan.textContent = new Date().getFullYear();
-                }
-            });
-        </script>
-        <!-- Product Details Modal -->
-<div id="product-modal" class="product-modal" style="display:none;">
-  <div class="modal-overlay"></div>
-  <div class="modal-content">
-    <button class="modal-close" aria-label="Close">&times;</button>
-    <div class="modal-body"></div>
-  </div>
-</div>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer-modern bg-gradient text-white pt-5 pb-3 mt-5" style="background: linear-gradient(90deg, #232526 0%, #414345 100%);">
+    <div class="container text-center">
+      <img src="logo.jpg" alt="Vintage Treasure Logo" style="height:48px;width:48px;" class="mb-2">
+      <h5 class="fw-bold mb-2">Vintage Treasure</h5>
+      <p class="mb-3 small">Supplying Mining, Engineering, Oil & Gas, Civil Infrastructure, and Construction Industries Worldwide</p>
+      <div class="mb-3">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#company-overview" class="footer-link">About</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#products" class="footer-link">Products</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="small">&copy; <span id="footer-year"></span> Vintage Treasure. All rights reserved.</div>
+    </div>
+  </footer>
+  <style>
+    .footer-link {
+      color: #f8d90f;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .footer-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer-modern i {
+      font-size: 1.3rem;
+      vertical-align: middle;
+      transition: color 0.2s;
+    }
+    .footer-modern i:hover {
+      color: #f8d90f;
+    }
+  </style>
+  <script src="script.js"></script>
 </body>
+</body>
+<script>
+  // Auto-update footer year
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
 </html>

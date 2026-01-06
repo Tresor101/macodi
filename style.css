@@ -1,0 +1,83 @@
+/* Navbar underline style */
+.nav-underline {
+  position: relative;
+  color: #fff !important;
+  transition: color 0.2s;
+}
+.nav-underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f8d90f;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.nav-underline:hover::after, .nav-underline.active::after {
+  width: 100%;
+}
+.nav-underline:hover {
+  color: #f8d90f !important;
+}
+body {
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Use logo as hero background */
+.hero {
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(120deg, rgba(35,37,38,0.4) 0%, rgba(65,67,69,0.4) 100%),
+    url('logo.jpg') center center/cover no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.hero-logo-bg {
+  display: none;
+}
+.hero > div {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.hero > div {
+  background: rgba(0,0,0,0.6);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+section#contact {
+  background: #222;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+label {
+  color: #ddd;
+}
+
+.btn-primary {
+  background: #007bff;
+  border: none;
+}
+
+.btn-success {
+  background: #28a745;
+  border: none;
+}
+
+#formAlert {
+  color: #28a745;
+  font-weight: bold;
+}
